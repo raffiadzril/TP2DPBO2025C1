@@ -163,7 +163,7 @@ public class Main {
             listbaju.add(baju);
         }
         tabel_baju(listbaju); // menampilkan data array list
-
+        input.close(); // menutup scanner
 
     }
 }
