@@ -27,7 +27,7 @@ def get_length_atribut_baju(atribut, list_baju):
             if len(baju.getJenis()) > length:
                 length = len(baju.getJenis())
     elif atribut == 'bahan':
-        length = 6
+        length = 5
         for baju in list_baju:
             if len(baju.getBahan()) > length:
                 length = len(baju.getBahan())
@@ -47,7 +47,7 @@ def get_length_atribut_baju(atribut, list_baju):
             if len(baju.getSize()) > length:
                 length = len(baju.getSize())
     elif atribut == 'merk':
-        length = 8
+        length = 4
         for baju in list_baju:
             if len(baju.getMerk()) > length:
                 length = len(baju.getMerk())
