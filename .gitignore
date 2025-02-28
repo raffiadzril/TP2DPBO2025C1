@@ -1,0 +1,8 @@
+# Ignore __pycache__ folder in any Python project
+**/__pycache__/
+
+# Ignore run.exe inside CPP folder
+CPP/run.exe
+
+# Ignore all .class files inside JAVA directory
+JAVA/**/*.class
