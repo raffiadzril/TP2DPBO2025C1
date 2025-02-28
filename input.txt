@@ -1,0 +1,121 @@
+CPP JAVA
+10
+Baju_Anjing_Sporty 75000 10 Jersey Polyester Merah Anjing M PetStyle
+Sweater_Kucing_Winter 90000 15 Sweater Wool Biru Kucing S MeowWear
+Jaket_Kelinci_Lucu 85000 8 Jaket Fleece Pink Kelinci L BunnyWear
+Kaos_Hamster_Mini 50000 20 Kaos Katun Kuning Hamster XS HammyStyle
+Baju_Kucing_Formal 120000 5 Kemeja Linen Putih Kucing M RoyalPaws
+Hoodie_Anjing_Streetwear 95000 12 Hoodie Cotton Hitam Anjing L UrbanPets
+Rompi_Hamster_Sport 60000 18 Rompi Polyester Abu_Abu Hamster S SportyPet
+Mantel_Kelinci_Winter 110000 7 Mantel Wool Coklat Kelinci M WarmBunny
+Daster_Kucing_Relax 70000 14 Daster Rayon Ungu Kucing M SoftPaws
+Jersey_Anjing_Timnas 80000 9 Jersey Polyester Biru Anjing L SportyPets
+
+
+
+PYTHON
+10
+Baju_Anjing_Sporty
+75000
+10
+Jersey
+Polyester
+Merah
+Anjing
+M
+PetStyle
+Sweater_Kucing_Winter
+90000
+15
+Sweater
+Wool
+Biru
+Kucing
+S
+MeowWear
+Jaket_Kelinci_Lucu
+85000
+8
+Jaket
+Fleece
+Pink
+Kelinci
+L
+BunnyWear
+Kaos_Hamster_Mini
+50000
+20
+Kaos
+Katun
+Kuning
+Hamster
+XS
+HammyStyle
+Baju_Kucing_Formal
+120000
+5
+Kemeja
+Linen
+Putih
+Kucing
+M
+RoyalPaws
+Hoodie_Anjing_Streetwear
+95000
+12
+Hoodie
+Cotton
+Hitam
+Anjing
+L
+UrbanPets
+Rompi_Hamster_Sport
+60000
+18
+Rompi
+Polyester
+Abu_Abu
+Hamster
+S
+SportyPet
+Mantel_Kelinci_Winter
+110000
+7
+Mantel
+Wool
+Coklat
+Kelinci
+M
+WarmBunny
+Daster_Kucing_Relax
+70000
+14
+Daster
+Rayon
+Ungu
+Kucing
+M
+SoftPaws
+Jersey_Anjing_Timnas
+80000
+9
+Jersey
+Polyester
+Biru
+Anjing
+L
+SportyPets
+
+PHP
+Baju_Anjing_Sporty 75000 10 Jersey Polyester Merah Anjing M PetStyle
+Sweater_Kucing_Winter 90000 15 Sweater Wool Biru Kucing S MeowWear
+Jaket_Kelinci_Lucu 85000 8 Jaket Fleece Pink Kelinci L BunnyWear
+Kaos_Hamster_Mini 50000 20 Kaos Katun Kuning Hamster XS HammyStyle
+Baju_Kucing_Formal 120000 5 Kemeja Linen Putih Kucing M RoyalPaws
+Hoodie_Anjing_Streetwear 95000 12 Hoodie Cotton Hitam Anjing L UrbanPets
+Rompi_Hamster_Sport 60000 18 Rompi Polyester Abu_Abu Hamster S SportyPet
+Mantel_Kelinci_Winter 110000 7 Mantel Wool Coklat Kelinci M WarmBunny
+Daster_Kucing_Relax 70000 14 Daster Rayon Ungu Kucing M SoftPaws
+Jersey_Anjing_Timnas 80000 9 Jersey Polyester Biru Anjing L SportyPets
+
+#Fotonya pilih saja dengan radio button
