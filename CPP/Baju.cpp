@@ -12,11 +12,11 @@ class Baju : public Aksesoris{
             this->merk = "";
         }
 
-        Baju(int id, string nama_produk, string kategori_produk, float harga_produk, string jenis, string warna, string bahan,  string untuk, string size, string merk){
+        Baju(int id, string nama_produk,  float harga_produk, int stok_produk, string jenis, string warna, string bahan,  string untuk, string size, string merk){
             this->set_id(id);
             this->set_nama_produk(nama_produk);
-            this->set_kategori_produk(kategori_produk);
             this->set_harga_produk(harga_produk);
+            this->set_stok_produk(stok_produk);
             this->set_jenis(jenis);
             this->set_warna(warna);
             this->set_bahan(bahan);
@@ -49,11 +49,11 @@ class Baju : public Aksesoris{
             this->merk = merk;
         }
 
-        void addBaju(int id, string nama_produk, string kategori_produk, float harga_produk, string jenis, string warna, string bahan, string untuk, string size, string merk){
+        void addBaju(int id, string nama_produk,  float harga_produk, int stok_produk, string jenis, string warna, string bahan, string untuk, string size, string merk){
             this->set_id(id);
             this->set_nama_produk(nama_produk);
-            this->set_kategori_produk(kategori_produk);
             this->set_harga_produk(harga_produk);
+            this->set_stok_produk(stok_produk);
             this->set_jenis(jenis);
             this->set_warna(warna);
             this->set_bahan(bahan);

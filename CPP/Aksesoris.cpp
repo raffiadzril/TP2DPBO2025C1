@@ -12,11 +12,11 @@ class Aksesoris : public Petshop{   // Kelas Aksesoris yang merupakan turunan da
             this->bahan = "";
         }
 
-        Aksesoris(int id, string nama_produk, string kategori_produk, float harga_produk, string jenis, string warna, string bahan, string ukuran){    // Konstruktor dengan parameter
+        Aksesoris(int id, string nama_produk,  float harga_produk, int stok_produk, string jenis, string warna, string bahan){    // Konstruktor dengan parameter
             this->set_id(id);
             this->set_nama_produk(nama_produk);
-            this->set_kategori_produk(kategori_produk);
             this->set_harga_produk(harga_produk);
+            this->set_stok_produk(stok_produk);
             this->jenis = jenis;
             this->warna = warna;
             this->bahan = bahan;
@@ -45,6 +45,6 @@ class Aksesoris : public Petshop{   // Kelas Aksesoris yang merupakan turunan da
         void set_bahan(string bahan){
             this->bahan = bahan;
         }
-        ~Aksesoris(){   // Destru
+        ~Aksesoris(){   // Destruk
         }
 };

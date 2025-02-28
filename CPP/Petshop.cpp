@@ -8,22 +8,22 @@ class Petshop{  // Kelas Petshop
     private:
         int id;
         string nama_produk;
-        string kategori_produk;
         float harga_produk;
+        int stok_produk;
 
     public:
         Petshop(){  // Konstruktor
             this->id = 0;
             this->nama_produk = "";
-            this->kategori_produk = "";
+            this->stok_produk = 0;
             this->harga_produk = 0;
         }
 
-        Petshop(int id, string nama_produk, string kategori_produk, float harga_produk){    // Konstruktor dengan parameter
+        Petshop(int id, string nama_produk,  float harga_produk, int stok_produk){    // Konstruktor dengan parameter
             this->id = id;
             this->nama_produk = nama_produk;
-            this->kategori_produk = kategori_produk;
             this->harga_produk = harga_produk;
+            this->stok_produk = stok_produk;
         }
         // Getter dan Setter
         int get_id(){   
@@ -42,12 +42,12 @@ class Petshop{  // Kelas Petshop
             this->nama_produk = nama_produk;
         }
 
-        string get_kategori_produk(){
-            return this->kategori_produk;
+        int get_stok_produk(){
+            return this->stok_produk;
         }
 
-        void set_kategori_produk(string kategori_produk){
-            this->kategori_produk = kategori_produk;
+        void set_stok_produk(int stok_produk){
+            this->stok_produk = stok_produk;
         }
 
         float get_harga_produk(){
