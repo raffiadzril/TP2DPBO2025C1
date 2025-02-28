@@ -20,12 +20,12 @@ class Baju(Aksesoris):
     def getMerk(self):
         return self.merk
     
-    def addProduk_Baju(self, id, nama_produk, kategori_produk, harga_produk, jenis, bahan, warna, untuk
+    def addProduk_Baju(self, id, nama_produk,  harga_produk, stok_produk, jenis, bahan, warna, untuk
                         , size, merk):    # Menambahkan produk
         self.id = id
         self.nama_produk = nama_produk
-        self.kategori_produk = kategori_produk
         self.harga_produk = harga_produk
+        self.stok_produk = stok_produk
         self.jenis = jenis
         self.bahan = bahan
         self.warna = warna

@@ -19,13 +19,5 @@ class Aksesoris(Petshop):
         self.warna = warna
     def getWarna(self):
         return self.warna
-    
-    def addProduk_Aksesoris(self, id, nama_produk, kategori_produk, harga_produk, jenis, bahan, warna):    # Menambahkan produk
-        self.id = id
-        self.nama_produk = nama_produk
-        self.kategori_produk = kategori_produk
-        self.harga_produk = harga_produk
-        self.jenis = jenis
-        self.bahan = bahan
-        self.warna = warna
+
     

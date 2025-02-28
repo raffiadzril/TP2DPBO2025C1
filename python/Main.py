@@ -11,11 +11,11 @@ def get_length_atribut_baju(atribut, list_baju):
         for baju in list_baju:
             if len(baju.getNamaProduk()) > length:
                 length = len(baju.getNamaProduk())
-    elif atribut == 'kategori_produk':
-        length = 15
+    elif atribut == 'stok_produk':
+        length = 11
         for baju in list_baju:
-            if len(baju.getKategoriProduk()) > length:
-                length = len(baju.getKategoriProduk())
+            if len(str(baju.getStokProduk())) > length:
+                length = len(str(baju.getStokProduk()))
     elif atribut == 'harga_produk':
         length = 12
         for baju in list_baju:
@@ -82,8 +82,8 @@ def get_length_atribut_baju(atribut, list_baju):
 def tabel_baju(list_baju):
     length_id = get_length_atribut_baju('id', list_baju)
     length_nama_produk = get_length_atribut_baju('nama_produk', list_baju)
-    length_kategori_produk = get_length_atribut_baju('kategori_produk', list_baju)
     length_harga_produk = get_length_atribut_baju('harga_produk', list_baju)
+    length_stok_produk = get_length_atribut_baju('stok_produk', list_baju)
     length_jenis = get_length_atribut_baju('jenis', list_baju)
     length_bahan = get_length_atribut_baju('bahan', list_baju)
     length_warna = get_length_atribut_baju('warna', list_baju)
@@ -92,11 +92,11 @@ def tabel_baju(list_baju):
     length_merk = get_length_atribut_baju('merk', list_baju)
     
 
-    print("-" * (length_id + length_nama_produk + length_kategori_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11))
+    print("-" * (length_id + length_nama_produk + length_stok_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11))
     print("|ID" + " " * (length_id - 2) +
       "|Nama Produk" + " " * (length_nama_produk - 11) +
-      "|Kategori Produk" + " " * (length_kategori_produk - 15) +
       "|Harga Produk" + " " * (length_harga_produk - 12) +
+      "|Stok Produk" + " " * (length_stok_produk - 15) +
       "|Jenis" + " " * (length_jenis - 5) +
       "|Bahan" + " " * (length_bahan - 5) +
       "|Warna" + " " * (length_warna - 5) +
@@ -104,12 +104,12 @@ def tabel_baju(list_baju):
       "|Size" + " " * (length_size - 4) +
       "|Merk" + " " * (length_merk - 4) + "|")
 
-    print("-" * (length_id + length_nama_produk + length_kategori_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11))
+    print("-" * (length_id + length_nama_produk + length_stok_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11))
     for baju in list_baju:
         print("|" + str(baju.getId()) + " " * (length_id - len(str(baju.getId()))) +
                 "|" + baju.getNamaProduk() + " " * (length_nama_produk - len(baju.getNamaProduk())) +
-                "|" + baju.getKategoriProduk() + " " * (length_kategori_produk - len(baju.getKategoriProduk())) +
                 "|" + str(baju.getHargaProduk()) + " " * (length_harga_produk - len(str(baju.getHargaProduk()))) +
+                "|" + str(baju.getStokProduk()) + " " * (length_stok_produk - len(str(baju.getStokProduk()))) +
                 "|" + baju.getJenis() + " " * (length_jenis - len(baju.getJenis())) +
                 "|" + baju.getBahan() + " " * (length_bahan - len(baju.getBahan())) +
                 "|" + baju.getWarna() + " " * (length_warna - len(baju.getWarna())) +
@@ -118,7 +118,7 @@ def tabel_baju(list_baju):
                 "|" + baju.getMerk() + " " * (length_merk - len(baju.getMerk())) + "|")
         
 
-    print("-" * (length_id + length_nama_produk + length_kategori_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11))
+    print("-" * (length_id + length_nama_produk + length_stok_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11))
 
     
 
@@ -132,19 +132,19 @@ def main():
     list_baju = []
 
     list_baju.append(Baju())
-    list_baju[-1].addProduk_Baju(1, "Baju_Anjing_Sporty", "Pakaian_Anjing", 75000, "Jersey", "Polyester", "Merah", "Anjing", "M", "PetStyle")
+    list_baju[-1].addProduk_Baju(1, "Baju_Anjing_Sporty", 75000, 20, "Jersey", "Polyester", "Merah", "Anjing", "M", "PetStyle")
 
     list_baju.append(Baju())
-    list_baju[-1].addProduk_Baju(2, "Sweater_Kucing_Winter", "Pakaian_Kucing", 90000, "Sweater", "Wool", "Biru", "Kucing", "S", "MeowWear")
+    list_baju[-1].addProduk_Baju(2, "Sweater_Kucing_Winter",  90000, 30, "Sweater", "Wool", "Biru", "Kucing", "S", "MeowWear")
 
     list_baju.append(Baju())
-    list_baju[-1].addProduk_Baju(3, "Jaket_Anjing_Waterproof", "Pakaian_Anjing", 120000, "Jaket", "Nylon", "Hitam", "Anjing", "L", "PawFashion")
+    list_baju[-1].addProduk_Baju(3, "Jaket_Anjing_Waterproof", 120000, 20, "Jaket", "Nylon", "Hitam", "Anjing", "L", "PawFashion")
 
     list_baju.append(Baju())
-    list_baju[-1].addProduk_Baju(4, "Daster_Kucing_Floral", "Pakaian_Kucing", 65000, "Daster", "Katun", "Pink", "Kucing", "M", "FurryChic")
+    list_baju[-1].addProduk_Baju(4, "Daster_Kucing_Floral",  65000, 30, "Daster", "Katun", "Pink", "Kucing", "M", "FurryChic")
 
     list_baju.append(Baju())
-    list_baju[-1].addProduk_Baju(5, "Baju_Tidur_Hamster_Lucu", "Pakaian_Hamster", 85000, "Piyama", "Satin", "Kuning", "Hamster", "XS", "ComfyPet")
+    list_baju[-1].addProduk_Baju(5, "Baju_Tidur_Hamster_Lucu",  85000, 45, "Piyama", "Satin", "Kuning", "Hamster", "XS", "ComfyPet")
 
     tabel_baju(list_baju)
     
@@ -153,8 +153,8 @@ def main():
     for j in range(jumlah_input):
         id = list_baju[-1].getId() + 1
         nama_produk = input()
-        kategori_produk = input()
-        harga_produk = int(input())
+        harga_produk = float(input())
+        stok_produk = int(input())
         jenis = input()
         bahan = input()
         warna = input()
@@ -162,7 +162,7 @@ def main():
         size = input()
         merk = input()
         list_baju.append(Baju())
-        list_baju[-1].addProduk_Baju(id, nama_produk, kategori_produk, harga_produk, jenis, bahan, warna, untuk, size, merk)
+        list_baju[-1].addProduk_Baju(id, nama_produk,  harga_produk, stok_produk, jenis, bahan, warna, untuk, size, merk)
     
     tabel_baju(list_baju)
 
