@@ -6,3 +6,5 @@ CPP/run.exe
 
 # Ignore all .class files inside JAVA directory
 JAVA/**/*.class
+
+.vscode/
