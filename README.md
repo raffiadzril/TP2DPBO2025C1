@@ -26,7 +26,7 @@ Saya, **Raffi Adzril Alfaiz** dengan **NIM 2308355**, mengerjakan Tugas Praktiku
 ---
 
 ### **4. PHP**  
-!([PHP/DOKUMENTASI/Add - PHP.png](https://github.com/raffiadzril/TP2DPBO2025C1/blob/main/PHP/DOKUMENTASI/Add%20-%20PHP.png))
+![DOK](PHP/DOKUMENTASI/Add - PHP.png)
 ![DOK](PHP/DOKUMENTASI/Add-Success PHP.png)
 
 ---
