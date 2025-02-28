@@ -5,8 +5,8 @@ class Baju extends Aksesoris{
 
     public Baju() {
     }
-    public Baju(int id, String nama_produk, String kategori_produk, float harga_produk, String jenis, String bahan, String warna, String untuk, String size, String merk) {
-        super(id, nama_produk, kategori_produk, harga_produk, jenis, bahan, warna);
+    public Baju(int id, String nama_produk,  float harga_produk, int stok_produk, String jenis, String bahan, String warna, String untuk, String size, String merk) {
+        super(id, nama_produk, harga_produk, stok_produk, jenis, bahan, warna);
         this.untuk = untuk;
         this.size = size;
         this.merk = merk;

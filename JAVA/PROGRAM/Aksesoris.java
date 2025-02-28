@@ -6,8 +6,8 @@ class Aksesoris extends Petshop {
     public Aksesoris() {
     }
 
-    public Aksesoris(int id, String nama_produk, String kategori_produk, float harga_produk, String jenis, String bahan, String warna) {
-        super(id, nama_produk, kategori_produk, harga_produk);
+    public Aksesoris(int id, String nama_produk, float harga_produk, int stok_produk, String jenis, String bahan, String warna) {
+        super(id, nama_produk, harga_produk, stok_produk);
         this.jenis = jenis;
         this.bahan = bahan;
         this.warna = warna;

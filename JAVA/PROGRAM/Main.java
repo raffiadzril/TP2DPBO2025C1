@@ -21,11 +21,11 @@ public class Main {
                 }
             }
         }
-        if(atribut.equals("kategori_produk")) {
-            length = 15;
+        if(atribut.equals("stok_produk")) {
+            length = 11;
             for(int i = 0; i < listbaju.size(); i++) {
-                if(listbaju.get(i).getKategori_produk().length() > length) {
-                    length = listbaju.get(i).getKategori_produk().length();
+                if(String.valueOf(listbaju.get(i).getStok_produk()).length() > length) {
+                    length = String.valueOf(listbaju.get(i).getStok_produk()).length();
                 }
             }
         }
@@ -91,7 +91,7 @@ public class Main {
     private static void tabel_baju(ArrayList<Baju> listbaju) {
         int length_id = get_length_atribut_baju("id", listbaju);
         int length_nama_produk = get_length_atribut_baju("nama_produk", listbaju);
-        int length_kategori_produk = get_length_atribut_baju("kategori_produk", listbaju);
+        int length_stok_produk = get_length_atribut_baju("stok_produk", listbaju);
         int length_harga_produk = get_length_atribut_baju("harga_produk", listbaju);
         int length_jenis = get_length_atribut_baju("jenis", listbaju);
         int length_bahan = get_length_atribut_baju("bahan", listbaju);
@@ -100,10 +100,10 @@ public class Main {
         int length_size = get_length_atribut_baju("size", listbaju);
         int length_merk = get_length_atribut_baju("merk", listbaju);
 
-        System.out.println("-".repeat(length_id + length_nama_produk + length_kategori_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11));
+        System.out.println("-".repeat(length_id + length_nama_produk + length_stok_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11));
         System.out.println("|ID" + " ".repeat(length_id - 2) +
                         "|Nama Produk" + " ".repeat(length_nama_produk - 11) +
-                        "|Kategori Produk" + " ".repeat(length_kategori_produk - 15) +
+                        "|Stok Produk" + " ".repeat(length_stok_produk - 11) +
                         "|Harga Produk" + " ".repeat(length_harga_produk - 12) +
                         "|Jenis" + " ".repeat(length_jenis - 5) +
                         "|Bahan" + " ".repeat(length_bahan - 5) +
@@ -111,11 +111,11 @@ public class Main {
                         "|Untuk" + " ".repeat(length_untuk - 5) +
                         "|Size" + " ".repeat(length_size - 4) +
                         "|Merk" + " ".repeat(length_merk - 4) + "|");
-        System.out.println("-".repeat(length_id + length_nama_produk + length_kategori_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11));
+        System.out.println("-".repeat(length_id + length_nama_produk + length_stok_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11));
         for(int i = 0; i < listbaju.size(); i++) {
             System.out.println("|" + listbaju.get(i).getId() + " ".repeat(length_id - String.valueOf(listbaju.get(i).getId()).length()) +
                             "|" + listbaju.get(i).getNama_produk() + " ".repeat(length_nama_produk - listbaju.get(i).getNama_produk().length()) +
-                            "|" + listbaju.get(i).getKategori_produk() + " ".repeat(length_kategori_produk - listbaju.get(i).getKategori_produk().length()) +
+                            "|" + listbaju.get(i).getStok_produk() + " ".repeat(length_stok_produk - String.valueOf(listbaju.get(i).getStok_produk()).length()) +
                             "|" + listbaju.get(i).getHarga_produk() + " ".repeat(length_harga_produk - String.valueOf(listbaju.get(i).getHarga_produk()).length()) +
                             "|" + listbaju.get(i).getJenis() + " ".repeat(length_jenis - listbaju.get(i).getJenis().length()) +
                             "|" + listbaju.get(i).getBahan() + " ".repeat(length_bahan - listbaju.get(i).getBahan().length()) +
@@ -124,7 +124,7 @@ public class Main {
                             "|" + listbaju.get(i).getSize() + " ".repeat(length_size - listbaju.get(i).getSize().length()) +
                             "|" + listbaju.get(i).getMerk() + " ".repeat(length_merk - listbaju.get(i).getMerk().length()) + "|");
         }
-        System.out.println("-".repeat(length_id + length_nama_produk + length_kategori_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11));
+        System.out.println("-".repeat(length_id + length_nama_produk + length_stok_produk + length_harga_produk + length_jenis + length_bahan + length_warna + length_untuk + length_size + length_merk + 11));
     }
     
     public static void main(String[] args) {
@@ -132,34 +132,34 @@ public class Main {
         ArrayList<Baju> listbaju = new ArrayList<Baju>(); // membuat array list baru
 
         // Menambahkan data ke array list
-        Baju baju = new Baju(1, "Baju_Anjing_Sporty", "Pakaian_Anjing", 75000, "Jersey", "Polyester", "Merah", "Anjing", "M", "PetStyle");
+        Baju baju = new Baju(1, "Baju_Anjing_Sporty", 75000, 42, "Jersey", "Polyester", "Merah", "Anjing", "M", "PetStyle");
         listbaju.add(baju);
-        baju = new Baju(2, "Sweater_Kucing_Winter", "Pakaian_Kucing", 90000, "Sweater", "Wool", "Biru", "Kucing", "S", "MeowWear");
+        baju = new Baju(2, "Sweater_Kucing_Winter", 90000, 35, "Sweater", "Wool", "Biru", "Kucing", "S", "MeowWear");
         listbaju.add(baju);
-        baju = new Baju(3, "Jaket_Anjing_Waterproof", "Pakaian_Anjing", 120000, "Jaket", "Nylon", "Hitam", "Anjing", "L", "PawFashion");
+        baju = new Baju(3, "Jaket_Anjing_Waterproof", 120000, 42, "Jaket", "Nylon", "Hitam", "Anjing", "L", "PawFashion");
         listbaju.add(baju);
-        baju = new Baju(4, "Daster_Kucing_Floral", "Pakaian_Kucing", 65000, "Daster", "Katun", "Pink", "Kucing", "M", "FurryChic");
+        baju = new Baju(4, "Daster_Kucing_Floral", 65000, 35, "Daster", "Katun", "Pink", "Kucing", "M", "FurryChic");
         listbaju.add(baju);
-        baju = new Baju(5, "Baju_Tidur_Hamster_Lucu", "Pakaian_Hamster", 85000, "Piyama", "Satin", "Kuning", "Hamster", "XS", "ComfyPet");
+        baju = new Baju(5, "Baju_Tidur_Hamster_Lucu", 85000, 35, "Piyama", "Satin", "Kuning", "Hamster", "XS", "ComfyPet");
         listbaju.add(baju);
 
         tabel_baju(listbaju); // menampilkan data array list
-        int id;
-        String nama_produk, kategori_produk, jenis, bahan, warna, untuk, size, merk;
+        int id, stok_produk;
+        String nama_produk, jenis, bahan, warna, untuk, size, merk;
         float harga_produk;
         int jumlah_input = input.nextInt(); // menginput jumlah data yang akan dimasukkan
         for(int i = 0; i < jumlah_input; i++) {
             id = listbaju.get(listbaju.size() - 1).getId() + 1;
             nama_produk = input.next();
-            kategori_produk = input.next();
             harga_produk = input.nextFloat();
+            stok_produk = input.nextInt();
             jenis = input.next();
             bahan = input.next();
             warna = input.next();
             untuk = input.next();
             size = input.next();
             merk = input.next();
-            baju = new Baju(id, nama_produk, kategori_produk, harga_produk, jenis, bahan, warna, untuk, size, merk);
+            baju = new Baju(id, nama_produk, harga_produk, stok_produk, jenis, bahan, warna, untuk, size, merk);
             listbaju.add(baju);
         }
         tabel_baju(listbaju); // menampilkan data array list
@@ -167,8 +167,3 @@ public class Main {
 
     }
 }
-
-
-
-
-        
