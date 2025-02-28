@@ -6,6 +6,9 @@ Saya, **Raffi Adzril Alfaiz** dengan **NIM 2308355**, mengerjakan Tugas Praktiku
 
 ---
 
+## **DIAGRAM KELAS**
+![class_diagram-Petshop.jpg](class_diagram-Petshop.jpg)
+
 ## **Dokumentasi**
 
 ### **1. C++**  
